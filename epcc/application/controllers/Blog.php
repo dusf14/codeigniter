@@ -12,12 +12,13 @@ class Blog extends CI_Controller {
 			'heading' => 'Esta é a minha Grande Página!'
 		);
 		/*
-			O índice do array assoc. passa a ser var. no destino(views/home.php)
+			O indice do array assoc. passa a ser var. no destino(views/home.php)
 		*/
+		$this->load->view('comuns/header', $data);
 		$this->load->view('home', $data);
+		$this->load->view('comuns/footer');
 	}
 	//.../epcc/index.php/Blog/comments
-
 	public function comments(){
 		echo "Comments.......";
 	}
@@ -45,6 +46,48 @@ class Blog extends CI_Controller {
 		echo "Seg(1)->". $this->uri->segment(1)."<br />";
 		echo "Seg(2)->". $this->uri->segment(2)."<br />";
 		echo "Seg(3)->". $this->uri->segment(3)."<br />";
+	}
+	// .../epcc/index.php/Blog/contactos
+	public function contactos(){
+		//array associativo
+		$data = array(
+			'title' => 'Contactos Page',
+			'heading' => 'Esta é a minha Grande Página!'
+		);
+		/*
+			O indice do array assoc. passa a ser var. no destino(views/home.php)
+		*/
+		$this->load->view('comuns/header', $data);
+		$this->load->view('contactos', $data);
+		$this->load->view('comuns/footer');
+	}
+	//http://localhost/codeigniter/epcc/index.php/blog/servicos
+	public function servicos(){
+		//array associativo
+		$data = array(
+			'title' => 'Serviços Page',
+			'heading' => 'Esta é a minha Grande Página!'
+		);
+		/*
+			O indice do array assoc. passa a ser var. no destino(views/home.php)
+		*/
+		$this->load->view('comuns/header', $data);
+		$this->load->view('servicos', $data);
+		$this->load->view('comuns/footer');
+	}
+
+	public function gallery(){
+		//array associativo
+		$data = array(
+			'title' => 'Gallery Page',
+			'heading' => 'Esta é a minha Grande Página!'
+		);
+		/*
+			O indice do array assoc. passa a ser var. no destino(views/home.php)
+		*/
+		$this->load->view('comuns/header', $data);
+		$this->load->view('gallery', $data);
+		$this->load->view('comuns/footer');
 	}
 
 }
