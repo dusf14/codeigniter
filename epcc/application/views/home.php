@@ -1,3 +1,4 @@
+<?php $this->load->view('comuns/header', $data); ?>
 <body>
 <style>
     body {
@@ -66,3 +67,4 @@
 </div>
 
 </body>
+<?php $this->load->view('comuns/footer', $data); ?>

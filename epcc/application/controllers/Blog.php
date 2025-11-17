@@ -71,9 +71,14 @@ class Blog extends CI_Controller {
 		/*
 			O indice do array assoc. passa a ser var. no destino(views/home.php)
 		*/
+
+		/* Carregar view via Controller
 		$this->load->view('comuns/header', $data);
 		$this->load->view('servicos', $data);
-		$this->load->view('comuns/footer');
+		$this->load->view('comuns/footer'); */
+		
+		// o true indica-me que qualquer contexto que consiga usar html vai ler e intrepertar esse html
+		$this->load->view('home', $data, true);
 	}
 
 	public function gallery(){

@@ -1,4 +1,4 @@
 <div>
-	Footer- Sérgio
+	Footer- Duarte Site
 </div>
 </body>
