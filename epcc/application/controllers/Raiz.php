@@ -6,7 +6,8 @@ class Raiz extends CI_Controller {
 	Ativar o helper que permite controlar a URL, deve ser feita no contrutor. Para que seja visivel em todo o controller.
 	*/
 	function __construct(){
-		// $this->load->hepler('url');
+		parent::__construct;
+		$this->load->helper('url');
 	}
 
 	public function index(){
@@ -22,7 +23,7 @@ class Raiz extends CI_Controller {
 	public function empresa(){
 			$data['title'] = 'Duarte Page';
 			$data['header'] = 'Serviços';
-			$this->load->view('servicos', $data);
+			$this->load->view('empresa', $data);
 	}
 	public function servicos(){
 		$data['title'] = 'Duarte Page';

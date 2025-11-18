@@ -10,7 +10,25 @@
 	<li class="<?=($this->router->fetch_class() == 'Raiz' && 
 	this->router->fetch_method() == 'index') ? 'active' : null
 ?>">
-	<a href="<?=base_url()?>"></a>
+		<a href="<?=base_url()?>">Home</a>
+	</li>
+
+	<li class="<?=($this->router->fetch_class() == 'Raiz' && 
+	this->router->fetch_method() == 'empresa') ? 'active' : null
+?>">
+		<a href="<?=base_url('empresa')?>">A Empresa</a>
+	</li>
+
+	<li class="<?=($this->router->fetch_class() == 'Raiz' && 
+	this->router->fetch_method() == 'servicos') ? 'active' : null
+?>">
+		<a href="<?=base_url('servicos')?>">Serviços</a>
+	</li>
+
+	<li class="<?=($this->router->fetch_class() == 'Raiz' && 
+	this->router->fetch_method() == 'galeria') ? 'active' : null
+?>">
+		<a href="<?=base_url('galeria')?>">Galeria</a>
 	</li>
 
 </ul>

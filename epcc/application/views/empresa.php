@@ -67,6 +67,10 @@
         <a href="contactos" class="btn">Contactos</a>
         <a href="gallery" class="btn">Gallery</a>
     </div>
+
+    <div>
+        A minha empresa é a maior de Portugal, transportes Duarte Cardoso, a sua encomenda já vai a caminho... 
+    </div>
 </div>
 
 </body>

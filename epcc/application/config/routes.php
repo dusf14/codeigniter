@@ -52,3 +52,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+// Rotas de Menu
+// [nome_da_rota] = nome_do_controlador/Nome_da_funcionalidade;
+$route['empresa'] = 'Raiz/empresa';
+$route['servicos'] = 'Raiz/servicos';
+$route['galeria'] = 'Raiz/galeria';
+
